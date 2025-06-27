@@ -15,67 +15,61 @@ Projeto desenvolvido como parte da **Formação Linux da DIO**, utilizando conce
 
 ## 🧾 Passo a Passo Detalhado com Imagens
 
-As imagens a seguir estão salvas em:
-
-```
-D:\Documents\formacao_linux\Modulo_04_Servicos_Linux\06_Desafio\img
-```
-
 ### 🔹 Etapas da Implementação
 
 #### **Passo 1: Criar e configurar a VM no VirtualBox**
 
-Imagem: `D:\Documents\formacao_linux\Modulo_04_Servicos_Linux\06_Desafio\img\01.png`
-
 Abra o VirtualBox e crie uma nova máquina com sistema **Ubuntu Server (64-bit)**. Alocar pelo menos 1024MB de memória RAM e criar um disco rígido virtual de 20GB.
+
+![01](./img/01.png)
 
 #### **Passo 2: Verificar e gerenciar Snapshots**
 
-Imagem: `D:\Documents\formacao_linux\Modulo_04_Servicos_Linux\06_Desafio\img\02.png`
-
 Crie snapshots para poder restaurar o estado do sistema em diferentes pontos do projeto. Isso permite simular a execução do script do zero.
+
+![02](./img/02.png)
 
 #### **Passo 3: Restaurar snapshot salvo**
 
-Imagem: `D:\Documents\formacao_linux\Modulo_04_Servicos_Linux\06_Desafio\img\03.png`
-
 Selecione o snapshot desejado e clique em “Restaurar”. Confirme a criação de um novo snapshot antes da restauração se quiser manter o progresso atual.
+
+![03](./img/03.png)
 
 #### **Passo 4: Aguardar processo de restauração**
 
-Imagem: `D:\Documents\formacao_linux\Modulo_04_Servicos_Linux\06_Desafio\img\04.png`
-
 A VM será restaurada automaticamente para o estado capturado no snapshot anterior.
+
+![04](./img/04.png)
 
 #### **Passo 5: Acessar a VM restaurada**
 
-Imagem: `D:\Documents\formacao_linux\Modulo_04_Servicos_Linux\06_Desafio\img\05.png`
-
 Após o boot, realize login com o usuário root e observe o status do sistema. A rede já deve estar configurada.
+
+![05](./img/05.png)
 
 #### **Passo 6: Criar e escrever o script de provisionamento**
 
-Imagem: `D:\Documents\formacao_linux\Modulo_04_Servicos_Linux\06_Desafio\img\06.png`
-
 Crie um diretório `/scripts2/`, dentro dele um arquivo `script-iac2.sh`. O conteúdo do script instala o Apache e copia a aplicação para a pasta do servidor web.
+
+![06](./img/06.png)
 
 #### **Passo 7: Tornar o script executável**
 
-Imagem: `D:\Documents\formacao_linux\Modulo_04_Servicos_Linux\06_Desafio\img\07.png`
-
 Use `chmod +x script-iac2.sh` para garantir permissão de execução. Verifique com `ls -l` se ele está com o atributo `x` (executável).
+
+![07](./img/07.png)
 
 #### **Passo 8: Garantir snapshot do estado atualizado da VM**
 
-Imagem: `D:\Documents\formacao_linux\Modulo_04_Servicos_Linux\06_Desafio\img\08.png`
-
 Crie um novo snapshot com o script salvo e pronto para execução. Isso ajuda na retomada futura.
+
+![08](./img/08.png)
 
 #### **Passo 9: Executar o script**
 
-Imagem: `D:\Documents\formacao_linux\Modulo_04_Servicos_Linux\06_Desafio\img\09.png`
-
 Execute o script com `./script-iac2.sh`. O Apache será instalado, os arquivos da aplicação baixados e copiados para `/var/www/html`.
+
+![09](./img/09.png)
 
 ---
 
