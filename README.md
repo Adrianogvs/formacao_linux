@@ -2,6 +2,7 @@
 
 Documentação completa da formação sobre **Linux** na plataforma **DIO**, com cursos, desafios práticos e materiais complementares organizados por módulos. Ideal para quem deseja aplicar o Linux no dia a dia com foco em **DevOps, Docker, Kubernetes e Engenharia de Dados**.
 
+![01](Modulo_04_Servicos_Linux/06_Desafio/img/formação.png)
 ---
 
 ## 🯩 Módulo 1: Introdução ao Linux — *4 atividades*
@@ -80,6 +81,3 @@ O último módulo foca na experiência gráfica do Linux e finaliza a formação
 * 🎯 **Objetivo da formação**: Consolidar os fundamentos essenciais do Linux com foco em aplicações práticas para **DevOps**, **contêineres**, **engenharia de dados** e **infraestrutura automatizada**.
 
 ---
-
-## 🎓 Formação Fundamentos de Linux
-![01](Modulo_04_Servicos_Linux/06_Desafio/img/formação.png)
